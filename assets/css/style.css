@@ -210,6 +210,14 @@ main {
     list-style-type: none;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
@@ -276,6 +284,11 @@ main {
         align-self: flex-end;
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
+
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
@@ -294,6 +307,11 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+}
+
+/* Gallery */
+#photos {
+    column-count: 4;
 }
 
 @media screen and (min-width: 1200px) {
